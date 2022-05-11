@@ -18,6 +18,7 @@ function List() {
     return (
         <div>
             <h2>Characters</h2>
+            <div className='row'>
             {loading ? (<div>Loading...</div>) : (
                 characters.map((character) => 
                     <Character 
@@ -27,6 +28,7 @@ function List() {
                       image={character.image} />
                 )
             )}
+            </div>
         </div>
     );
 }
